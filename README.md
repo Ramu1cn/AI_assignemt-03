@@ -1,3 +1,6 @@
+Author : RAMU C N
+Date : 29/04/2025
+Description:
 This project implements a chess game using AI-based game-playing algorithms. The game allows two players (AI vs AI  to play chess with evaluation functions and a minimax algorithm to decide moves. The game uses the popular Python library pygame for rendering the board and handling the user interface, and implements basic AI using a search tree to evaluate the best possible moves.
 
 Performance Optimization and Evaluation Considerations
