@@ -1,12 +1,12 @@
-Author : RAMU C N
-Date : 29/04/2025
-Description:
+## `Author` : `RAMU C N`
+## `Date` : `29/04/2025`
+## `Description:`
 This project implements a chess game using AI-based game-playing algorithms. The game allows two players (AI vs AI  to play chess with evaluation functions and a minimax algorithm to decide moves. The game uses the popular Python library pygame for rendering the board and handling the user interface, and implements basic AI using a search tree to evaluate the best possible moves.
 
 Performance Optimization and Evaluation Considerations
 To optimize the performance and ensure smooth gameplay, several settings have been tweaked for balancing between speed and depth of AI evaluation.
 
-1. Reduced Frame Delay (pygame.time.wait(10))
+1. `Reduced Frame Delay (pygame.time.wait(10))`
 In order to avoid overwhelming the system with excessive processing and to allow for smoother gameplay, the time delay between frames during AI evaluation has been reduced. Specifically, the pygame.time.wait(10) function has been used to insert a 10-millisecond delay after each frame. This ensures that:
 
 Smooth rendering: The game doesn't render frames too quickly, giving the player or the viewer a smooth visual experience.
@@ -18,7 +18,7 @@ While this delay is set to 10 milliseconds in the current setup, it can be adjus
 
 # pygame.time.wait(10)
 
-2. AI Search Depth (depth = 2)
+2. `AI Search Depth (depth = 2)`
 To control the strength and speed of the AI, the depth of the search tree used in the Minimax algorithm has been limited to depth 2. The search depth defines how many moves ahead the AI will consider when evaluating the best move. Here’s the trade-off:
 
 Smaller depth (e.g., 2): The AI will calculate fewer possible moves, leading to faster decision-making but less strategic gameplay. This setting is useful for faster AI responses and for games where responsiveness is prioritized over deep strategic play.
